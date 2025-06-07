@@ -23,3 +23,12 @@ func TestWithCursor(t *testing.T) {
 
 	require.Equal(t, "2017-01-19T18:39:17+00:00", opt.cursor)
 }
+
+func TestWithSort(t *testing.T) {
+	fn := WithSort("-last_charge_date")
+
+	opt := options{}
+	fn(&opt)
+
+	require.Equal(t, "-last_charge_date", opt.sort)
+}

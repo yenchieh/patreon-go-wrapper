@@ -145,6 +145,10 @@ func (c *Client) buildURL(path string, opts ...requestOption) (string, error) {
 		q.Set("page[cursor]", cfg.cursor)
 	}
 
+	if cfg.sort != "" {
+		q.Set("sort", cfg.sort)
+	}
+
 	u.RawQuery = q.Encode()
 	return u.String(), nil
 }

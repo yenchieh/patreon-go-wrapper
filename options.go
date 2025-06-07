@@ -12,6 +12,7 @@ type options struct {
 	include string
 	size    int
 	cursor  string
+	sort    string
 }
 
 type requestOption func(*options)
@@ -49,6 +50,12 @@ func WithCursor(cursor string) requestOption {
 		}
 
 		o.cursor = cursor
+	}
+}
+
+func WithSort(sort string) requestOption {
+	return func(o *options) {
+		o.sort = sort
 	}
 }
 

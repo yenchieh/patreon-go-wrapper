@@ -6,7 +6,7 @@
 
 `patreon-go-wrapper` is a Go client library for accessing the [Patreon API V2](https://docs.patreon.com/#api).
 
-> Forked from [patreon-go](https://github.com/mxpv/patreon-go) which has a great implementation for Patreon API V1
+> Forked from [patreon-go](https://github.com/laustindasauce/patreon-go-wrapper/fork) which has a great implementation for Patreon API V2
 
 ## How to import
 
