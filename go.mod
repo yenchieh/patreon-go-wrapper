@@ -1,4 +1,4 @@
-module github.com/austinbspencer/patreon-go-wrapper
+module github.com/yenchieh/patreon-go-wrapper
 
 go 1.23.0
 
